@@ -1,15 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 
 const SingleSwatchCircle = ({ activeID, item, handleClick }) => {
-  console.log(item);
+  const [handleAnimation, setHandleAnimation] = useState(false);
+
+  const MyCustomHandler = (item) => {
+    handleClick(item);
+    setHandleAnimation(true);
+    setTimeout(() => setHandleAnimation(false), 3000);
+  };
 
   return (
     <div
       className={`
 cursor-pointer w-9 h-9 p-1 rounded-full drop-shadow-xl bg-white transition ease-in hover:scale-110
-${item.id === activeID ? "scale-125" : ""}
+${item.id === activeID ? "scale-125" : ""} ${handleAnimation ? "pointer-events-none cursor-not-allowed" : ""}
 `}
-      onClick={() => handleClick(item)}
+      onClick={() => MyCustomHandler(item)}
     >
       <div
         style={{ backgroundColor: item.SwatchColor }}

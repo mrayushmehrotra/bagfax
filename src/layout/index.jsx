@@ -6,7 +6,8 @@ import Canvas from "./canvas.jsx";
 const Banner = () => {
   const banner = useRef();
 
-  const [activeData, setActiveData] = useState(data[1]);
+  const [activeData, setActiveData] = useState(data[0]);
+  const [condition, setCondition] = useState(false);
 
   const handleSwatchClick = (item) => {
     if (activeData.id !== item.id) setActiveData(item);
@@ -31,7 +32,7 @@ const Banner = () => {
     <div ref={banner} className="w-screen   h-screen relative">
       <div
         className="logo absolute my-2 ml-6
-text-left text-2xl  font-bold tracking-widest
+text-left text-2xl font-bold tracking-widest
 md:ml-28 lg:ml-[12vw] lg:my-8"
       >
         MISFIT.
@@ -41,8 +42,9 @@ md:ml-28 lg:ml-[12vw] lg:my-8"
           activeData={activeData}
           handleSwatchClick={handleSwatchClick}
           swatchData={data}
+          condition={condition}
         />
-        <Content activeData={activeData} />
+        <Content activeData={activeData} setCondition={setCondition} />
       </div>
     </div>
   );
