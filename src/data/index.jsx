@@ -11,6 +11,18 @@ export const data = [
       text: "#000",
       background: "#d7b172",
     },
+
+    itemList: {
+      bag: {
+        color: "#E6D3C4",
+      },
+      strap: {
+        color: "#5e2b17",
+      },
+      metal: {
+        color: "#d7b172",
+      },
+    },
   },
   {
     id: 2,
@@ -24,6 +36,17 @@ export const data = [
       text: "#fff",
       background: "#774a37",
     },
+    itemList: {
+      bag: {
+        color: "#774a37",
+      },
+      strap: {
+        color: "#503830",
+      },
+      metal: {
+        color: "#d4c5b5",
+      },
+    },
   },
   {
     id: 3,
@@ -36,6 +59,17 @@ export const data = [
     buttonColor: {
       text: "#fff",
       background: "#2f7393",
+    },
+    itemList: {
+      bag: {
+        color: "#2f7393",
+      },
+      strap: {
+        color: "#1d1b1b",
+      },
+      metal: {
+        color: "#f2f2f2",
+      },
     },
   },
 ];
