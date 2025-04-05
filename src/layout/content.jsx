@@ -21,7 +21,7 @@ const Content = ({ activeData, setCondition, condition }) => {
     });
 
     gsap.from(".text", {
-      y: 200,
+      y: 10,
       ease: "power4.out",
       duration: 1,
       stagger: {

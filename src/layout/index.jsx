@@ -6,7 +6,7 @@ import Canvas from "./canvas.jsx";
 const Banner = () => {
   const banner = useRef();
 
-  const [activeData, setActiveData] = useState(data[1]);
+  const [activeData, setActiveData] = useState(data[0]);
   const [condition, setCondition] = useState(false);
 
   const handleSwatchClick = (item) => {
