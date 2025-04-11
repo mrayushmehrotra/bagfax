@@ -35,7 +35,7 @@ const Banner = () => {
 text-left text-2xl font-bold tracking-widest
 md:ml-28 lg:ml-[12vw] lg:my-8"
       >
-        MISFIT.
+        BAGFAX.
       </div>
       <div className="w-full h-full flex justify-between items-center flex-col lg:flex-row-reverse">
         <Canvas

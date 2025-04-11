@@ -1,11 +1,17 @@
+// src/App.jsx
 import React from "react";
-import Banner from "./layout";
+import { Route, Routes, BrowserRouter } from "react-router-dom";
+import Home from "./layout/main";
+import Shop from "./pages/shop";
 
 const App = () => {
   return (
-    <div className="App">
-      <Banner />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/shop" element={<Shop />} />
+      </Routes>
+    </BrowserRouter>
   );
 };
 

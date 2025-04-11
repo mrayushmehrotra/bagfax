@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import gsap from "gsap";
+import { Link } from "react-router-dom";
 
 const Content = ({ activeData, setCondition, condition }) => {
   useEffect(() => {
@@ -48,9 +49,11 @@ const Content = ({ activeData, setCondition, condition }) => {
           <p className="text">{activeData.text}</p>
         </p>
         <div className="relative overflow-hidden p-4 ">
-          <button className=" text cursor-pointer button rounded-2xl outline-none px-8 py-2  font-medium  bg-[#4A6E6A]  md:px-10 md:py-4  ">
-            Shop Now
-          </button>
+          <Link to="/shop">
+            <button className=" text cursor-pointer button rounded-2xl outline-none px-8 py-2  font-medium  bg-[#4A6E6A]  md:px-10 md:py-4  ">
+              Shop Now
+            </button>
+          </Link>
         </div>
       </div>
     </div>
