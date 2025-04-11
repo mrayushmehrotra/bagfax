@@ -72,4 +72,53 @@ export const data = [
       },
     },
   },
+
+  {
+    id: 5,
+    heading: "Mauve Dream",
+    subHeading: "Velvety Purple Elegance",
+    text: "This luxurious mauve shade brings sophistication and creativity to your everyday style",
+    SwatchColor: "#8839EF",
+    backgroundColor: "#E8D5F0",
+    headingColor: "#1a103d",
+    buttonColor: {
+      text: "#fff",
+      background: "#8839EF",
+    },
+    itemList: {
+      bag: {
+        color: "#CA9EE6",
+      },
+      strap: {
+        color: "#1d1b1b",
+      },
+      metal: {
+        color: "#f2f2f2",
+      },
+    },
+  },
+  {
+    id: 6,
+    heading: "Peach Blush",
+    subHeading: "Warm Coral Delight",
+    text: "A soft peachy tone that radiates warmth and approachability for your daily adventures",
+    SwatchColor: "#FE640B",
+    backgroundColor: "#FFE3D0",
+    headingColor: "#5c271e",
+    buttonColor: {
+      text: "#fff",
+      background: "#FE640B",
+    },
+    itemList: {
+      bag: {
+        color: "#FE640B",
+      },
+      strap: {
+        color: "#5e2b17",
+      },
+      metal: {
+        color: "#f2f2f2",
+      },
+    },
+  },
 ];
